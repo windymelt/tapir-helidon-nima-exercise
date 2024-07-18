@@ -19,7 +19,6 @@ val helloEndpoint = endpoint.get
   .out(stringBody)
   .serverLogic { _ =>
     Future {
-      Thread.sleep(1000)
       Right("Hello, Armeria!")
     }
   }
